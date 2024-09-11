@@ -125,7 +125,12 @@ type Perspective struct {
 
 //Controller categorizes the declaration of generic control information.
 type Controller struct {
-	//TODO
+	HasId
+	HasName
+	HasAsset
+	Skin  *Skin  `xml:"skin"`
+	Morph *Morph `xml:"morph"`
+	HasExtra
 }
 
 //InstanceController instantiates a a COLLADA controller resource.
